@@ -41,6 +41,27 @@ namespace Jornaleros.Server
 
             services.AddAuthentication()
                 .AddIdentityServerJwt();
+                //.AddMicrosoftAccount(microsoftOptions =>
+                //{
+                //    microsoftOptions.ClientId = Configuration["Authentication:Microsoft:ClientId"];
+                //    microsoftOptions.ClientSecret = Configuration["Authentication:Microsoft:ClientSecret"];
+                //})
+                //.AddGoogle(googleOptions => {
+                //    IConfigurationSection googleAuthNSection =
+                //        Configuration.GetSection("Authentication:Google");
+
+                //    googleOptions.ClientId = googleAuthNSection["ClientId"];
+                //    googleOptions.ClientSecret = googleAuthNSection["ClientSecret"];
+                //})
+                //.AddFacebook(facebookOptions =>
+                //{
+                //    facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
+                //    facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+                //});
+
+            //.AddTwitter(twitterOptions => { ... })
+           
+
             services.Configure<IdentityOptions>(options =>
             {
                 // Password settings
