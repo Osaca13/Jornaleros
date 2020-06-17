@@ -2,6 +2,7 @@
 @model RegisterModel
 @{
     ViewData["Title"] = "Register";
+    Layout = "/Pages/Shared/_Layout.cshtml";
 }
 
 <h1>@ViewData["Title"] "Este nombre es feo"</h1>
@@ -63,5 +64,5 @@
 </div>
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial" src="../_ValidationScriptsPartial.cshtml" />
 }

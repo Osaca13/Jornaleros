@@ -4,7 +4,8 @@
 
 @{
     ViewData["Title"] = "Acceso";
-   
+    Layout = "/Pages/Shared/_Layout.cshtml";
+
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -83,5 +84,5 @@
 </div>
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial" src="../_ValidationScriptsPartial.cshtml" />
 }
